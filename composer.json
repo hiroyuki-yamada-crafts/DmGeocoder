@@ -4,7 +4,7 @@
     "description": "Geocoding library.",
     "keywords": ["geocoding","geocoder"],
     "homepage": "https://github.com/hiroyuki-yamada-crafts/DmGeocoder",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "MIT",
     "authors": [
         {
