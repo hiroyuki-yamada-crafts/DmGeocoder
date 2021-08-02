@@ -129,7 +129,7 @@ class Dm_Geocoder_GISCSV_Reader implements Iterator
 		if(!isset($this->lines[$this->position])){
 			return false;
 		}
-		if(count($this->lines[$this->position])===0){
+		if(strlen($this->lines[$this->position])===0){
 			return false;
 		}
 		return true;
