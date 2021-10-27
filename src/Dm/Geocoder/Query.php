@@ -82,7 +82,7 @@ class Dm_Geocoder_Query
 		//住所中の数値を漢数字に変換する
 		$address = preg_replace_callback('/[0-9]+/msu',
 		//$address = preg_replace_callback('/[0-9.\.-]+/msu',
-		create_function('$mt', 'return Dm_Geocoder_Query::num2kan_decimal($mt[0]);'), $address);
+		function($mt) {return Dm_Geocoder_Query::num2kan_decimal($mt[0]);}, $address);
 		
 		//都道府県名以降の住所
 		$this->address = $address;
